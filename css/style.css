@@ -1,0 +1,292 @@
+body{
+  background-color: #353535;
+
+}
+
+.navbar{
+  margin-bottom: 0;
+}
+
+h1{
+  color:#fbfbfb;
+  font-family: sans-serif;
+
+}
+h2{
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  color:#fbfbfb;
+  font-family: sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+li{
+  color: #bbc4ca;
+
+
+}
+h5{
+  color:#fbfbfb;
+}
+
+p{
+  color: #bbc4ca;
+}
+
+#mybutton{
+  margin: 0 auto;
+  display: block;
+  width: 30px;height: 30px;
+  background: url(../img/mymusic.png) no-repeat;
+}
+#mybutton{
+  background-position: 0 0;
+}
+#mybutton:hover{
+  background-position: -30px 0;
+  }
+#mybutton:active{
+  background-position: -60px 0;
+}
+
+#myplayer{
+  margin: 0 auto;
+}
+
+
+
+.动画{
+  background-size:cover;
+  padding-left: 30rem;
+}
+
+
+.animationA{
+  margin-top: 150px;
+  width:30rem;
+  height: 30rem;
+  position: relative;
+
+}
+
+.circle1{
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  top:-.2rem;
+  left:-.2rem;
+  background:#902e8c;
+  border: .2rem solid #902e8c;
+  animation: ballJump1 10s ease-in infinite,ballRoll1 10s linear infinite;
+}
+
+.circle6{
+  position: absolute;
+  width: 25%;
+  height: 25%;
+  border-radius: 50%;
+  top:-.2rem;
+  left:-.2rem;
+  background:#252525;
+  border: .2rem solid #252525;
+}
+
+.circle-childmove1{
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  top:-.2rem;
+  left:-.1rem;
+  background: white;
+  border: .2rem solid white;
+}
+
+.circle-childmove2{
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  top:2rem;
+  left:2rem;
+  background: white;
+  border: .2rem solid white;
+}
+
+.circle-child1{
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  top:-.2rem;
+  left:-.1rem;
+  background: white;
+  border: .2rem solid white;
+  animation: zhuan1 1s ease alternate infinite;
+}
+@keyframes zhuan1 {
+  to{
+    transform: rotate(500deg);}
+}
+@keyframes zhuan2 {
+  to{
+    transform: rotate(-500deg);}
+}
+.circle-child2{
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  top:1rem;
+  left:1rem;
+  background: white;
+  border: .2rem solid white;
+  animation: zhuan2 1s ease alternate infinite;
+}
+.circle-child3{
+  position: absolute;
+  width: 30%;
+  height: 50%;
+  border-radius: 50%;
+  background: red;
+  top:3rem;
+  left:-.5rem;
+  background: #ef6a56;
+  border: .5rem solid #cc3544;
+  text-align: center;
+  animation: openmouth 1s ease alternate infinite;
+}
+@keyframes openmouth{
+  50%{
+    width: 30%;
+    height: 30%;
+    border-radius: 20%;
+  }
+}
+.mini{
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background: black;
+}
+
+.circle3{
+  top:-.2rem;
+  left:-.2rem;
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  background: #2aabdf;
+  border: .2rem solid #2aabdf;
+  animation: ballJump3 15s ease-in infinite,ballRoll3 15s linear infinite;
+}
+.circle4{
+  top:-.2rem;
+  left:-.2rem;
+  position: absolute;
+  width: 20%;
+  height:20%;
+  border-radius: 50%;
+  background:#fcb340;
+  border: .2rem solid #fcb340;
+  animation:ballJump4 10s ease-in infinite,ballRoll4 20s linear infinite;
+}
+
+.circle5{
+  top:-.2rem;
+  left:-.2rem;
+  position: absolute;
+  width: 20%;
+  height:20%;
+  border-radius: 50%;
+  background:pink;
+  border: .2rem solid pink;
+  animation:ballRoll5 7s linear alternate infinite;
+}
+
+@keyframes ballRoll5 {
+  to{
+    transform: rotate(1000deg);
+    left: 600px;
+  }
+}
+
+.circle2{
+
+  margin: -400px auto;
+  overflow: hidden;
+  display: inline-block;
+  position: absolute;
+}
+.circle22{
+  left: 30rem;
+  margin: -300px auto;
+  margin-bottom: -.2rem;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  border: 2rem solid #a87b95;
+  border-radius: 20%;
+}
+
+.rect{
+  width: 10px;
+  height: 400px;
+  margin-right: 5px;
+  float:left;
+  background-color: #cc3544;
+  animation:3s rectScale cubic-bezier(0.54, 0.68, 0.82, 0.15) infinite;
+}
+
+
+@keyframes ballJump1{
+  from{top:-800px;}
+  3%{top:-200px;}
+  7%{top:-50px;}
+  8%{top:0px;}
+  9%{top:-5px;}
+  to,6%,10%{top:0;}
+}
+@keyframes ballRoll1{
+  to{
+    transform: rotate(5012deg);
+    left: 2500px;
+  }
+}
+@keyframes rectScale{
+  50%{
+    transform: scaleY(0);
+    top:2500px;}
+
+}
+
+@keyframes ballJump3{
+  from{top:-800px;}
+  3%{top:-200px;}
+  7%{top:-50px;}
+  8%{top:0px;}
+  9%{top:-5px;}
+  to,6%,10%{top:0;}
+}
+@keyframes ballRoll3{
+  to{
+    transform: rotate(2300deg);
+    left: 2500px;
+  }
+}
+@keyframes ballJump4{
+  from{top:-800px;}
+  3%{top:-200px;}
+  7%{top:-50px;}
+  8%{top:0px;}
+  9%{top:-5px;}
+  to,6%,10%{top:0;}
+}
+@keyframes ballRoll4{
+  to{
+    transform: rotate(-2000deg);
+    left:-2500px;
+  }
