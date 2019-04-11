@@ -1,0 +1,91 @@
+
+body{
+
+  background-color: #353535;
+}
+.navbar{
+  margin-bottom: 0;
+}
+
+.background{
+  overflow: hidden;
+}
+.container{
+  margin-top: -11rem;
+  padding-left: 0;
+  padding-right: 0;
+
+}
+
+h1{
+  color: #fbfbfb;
+  font-weight:normal;
+}
+h3{
+  color:#bbc4ca;
+  font-weight:normal;
+}
+h5{
+  color:#9d9d9d;
+  display: inline;
+  font-weight:normal;
+}
+.minibutton{
+  text-align: right;
+}
+
+
+img{
+  border-radius:4px;
+}
+
+.col-xs-12{
+  text-align: left;
+  padding-top: 2rem;
+  overflow: hidden;
+
+
+}
+.overview{
+  background-color: #fbfbfb;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align:center;
+  line-height: 2rem;
+  font-weight: normal;
+  border-radius: 4px;
+
+}
+
+
+.link{
+  width: 80%;
+  height: 10px;
+  border-top: solid #ACC0D8 1px;
+  text-align: center;
+}
+
+
+.panel-body{
+  line-height: 3rem;
+}
+
+.item2{
+  padding-top: 2rem;
+  text-align: right;
+}
+.faceimge{
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  text-align: center;
+}
+.mybutton{
+  margin:10px 10px;
+  padding: 10px 10px;
+  background-color: white;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #1d7bc5;
+}
